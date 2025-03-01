@@ -1,0 +1,67 @@
+.header_area{
+    background-color: #fff;
+    padding:0px 20px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header_area img{
+    width:15%;
+}
+
+.header_area .logo_brand{
+    font-size:25px;
+    font-weight: 700;
+    line-height: 35px;
+    cursor: pointer;
+    margin-left:10px;
+    color: #7701c0;
+}
+
+.header_area .srcIcon{
+    margin-right: -30px;
+    z-index: 99;
+    margin-left:30px;
+}
+
+
+.header_area input{
+    background-color: #F0F5FF;
+    padding:10px 40px;
+    border-radius: 8px;
+    width: 450px !important;
+    border:none;
+    outline:none;
+}
+
+.header_area .css-1umw9bq-MuiSvgIcon-root{
+    background: #F0F5FF !important;
+    padding: 15px !important;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    fill:  #000;
+    margin-right: 20px !important;
+}
+
+.header_area .name{
+    font-size:18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-top:15px;
+}
+
+.header_area .userBox img{
+    width:50px;
+    height: 50px;
+}
+
+.header_area .userBox .user{
+    font-size:14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(156, 151, 151);
+    margin-left: 15px;
+    margin-top: -15px;
+}
