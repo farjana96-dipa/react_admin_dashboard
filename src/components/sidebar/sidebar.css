@@ -1,0 +1,109 @@
+.sidebar .sidebtn{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    text-align: start !important;
+    color: rgb(94, 93, 114);
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px !important;
+}
+
+.sidebar .keyicon{
+    float: right !important;
+}
+.sidebar .sidebtn .firstIcon{
+    width:35px;
+    height: 35px;
+    background-color: transparent;
+    color: rgb(94, 93, 114);
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.sidebar .sidebtn:hover{
+    background-color: #F1F1F1;
+    border-radius: 12px;
+}
+.sidebar .sidebtn:hover .firstIcon{
+    background-color:blue;
+    color:#fff;
+
+}
+.sidebar .sidebtn.active .firstIcon{
+    background-color:blue;
+    color:#fff;
+}
+.sidebar .sidebtn svg{
+    font-size: 25px !important;
+
+}
+
+.sidebar .sidebtn.active{
+    background-color:#F1F1F1;
+    border-radius: 12px;
+}
+
+.sidebar ul{
+    list-style-type: none;
+}
+
+.sidebar .secUl{
+    list-style: none;
+    border-left:2px solid #ddd;
+    padding:0px 0px 0px 10px;
+    margin-left:50px;
+}
+
+.sidebar .secUl li{
+    padding: 10px 10px 10px 20px;
+    margin-left:-10px;
+}
+.sidebar .secUl li a{
+    font-size:16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #000 !important;
+}
+
+.sidebar .secUl li:hover a{
+    color: blue !important;
+}
+
+.sidebar .badge{
+    float:right !important;
+    background-color: blue !important;
+}
+
+.sidebar .secUl .collapse{
+    height: auto;
+}
+
+.sidebar .secUl .collapsed{
+    height: 0px;
+    opacity: 0;
+}
+
+.sidebar .logoutBtn{
+    background-color: rgba(5, 24, 197, 0.493);
+    padding:30px;
+    border-radius: 15px;
+    margin:20px;   
+}
+
+.sidebar .logoutBtn .logBtn{
+    background-color: blue;
+    color: #fff;
+    padding:15px 45px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor:pointer;
+    border-radius: 35px;
+    border:none;
+    outline: none;
+    transition: all 0.5s ease;
+}

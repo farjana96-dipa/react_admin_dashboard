@@ -19,6 +19,7 @@
 
 body{
   font-family: "Lato", sans-serif;
+  background-color: #faf5f5;
 }
 a{
   text-decoration: none;
@@ -26,4 +27,42 @@ a{
 
 .container-fluid{
   padding: 0px 120px;
+}
+
+
+.main .sidebarWrapper{
+  width:20%;
+ flex: 0 0 20%;
+ transition: all 0.3s ease-in-out;
+  
+}
+
+.main .sidebarWrapper .sidebar{
+  width:20%;
+  background-color: #fff;
+  padding: 30px 30px 80px 30px;
+  position: fixed;
+  left:0;
+  top:85px;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.4px 0 3.2px;
+  overflow-y: scroll;
+
+}
+
+.main .sidebarWrapper .sidebar::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+.main .sidebarWrapper .sidebar::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+}
+
+.main .sidebarWrapper .sidebar::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.25) /* Color of the track */
+}
+
+.main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 255, 0.425); /* Color of the scrollbar */
+  border-radius: 5px; /* Rounded corners */
 }
