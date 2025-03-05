@@ -66,3 +66,9 @@ a{
   background-color: rgba(0, 0, 255, 0.425); /* Color of the scrollbar */
   border-radius: 5px; /* Rounded corners */
 }
+
+.main .content{
+  width:80%;
+  flex: 0 0 80%;
+  transition: all 0.5s ease;
+}

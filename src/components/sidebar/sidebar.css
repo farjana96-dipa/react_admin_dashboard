@@ -15,6 +15,8 @@
 
 .sidebar .keyicon{
     float: right !important;
+    transition: all 0.5s ease;
+    margin-top:7px;
 }
 .sidebar .sidebtn .firstIcon{
     width:35px;
@@ -77,16 +79,10 @@
 .sidebar .badge{
     float:right !important;
     background-color: blue !important;
+    margin-top: 7px;
 }
 
-.sidebar .secUl .collapse{
-    height: auto;
-}
 
-.sidebar .secUl .collapsed{
-    height: 0px;
-    opacity: 0;
-}
 
 .sidebar .logoutBtn{
     background-color: rgba(5, 24, 197, 0.493);
@@ -106,4 +102,8 @@
     border:none;
     outline: none;
     transition: all 0.5s ease;
+}
+
+.sidebar .sidebtn.active .keyicon{
+    transform: rotate(90deg);
 }

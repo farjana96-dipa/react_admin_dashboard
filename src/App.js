@@ -1,7 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Dashboard from './pages/home/index.js'
+import Dashboard from './pages/Dashboard/index.js'
 import Header from './components/header/header.js';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Sidebar from  './components/sidebar/index.js'
