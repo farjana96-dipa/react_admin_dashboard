@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './header.css'
-import {useState} from 'react'
+
 
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
+import Badge from '@mui/material/Badge';
 
-
-
+import MenuIcon from '@mui/icons-material/Menu';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 
@@ -22,6 +22,8 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 
 import LogoutIcon from '@mui/icons-material/Logout';
+
+import {MyContext} from '../../App.js';
 
 export default function Header() {
 
@@ -43,6 +45,8 @@ export default function Header() {
         setNofity(false);
       };
 
+      const context = useContext(MyContext);
+
   return (
    <header>
     <div className='header_area'>
@@ -56,7 +60,12 @@ export default function Header() {
                 </div>
                 <div className='col-md-6'>
                     <div className='d-flex align-items-center'>
-                        <MenuOpenIcon className='menuOPen'/>
+                        <button onClick={()=>context.setToggle(!context.toggle)}>
+                            {
+                                context.toggle === false ?  <MenuOpenIcon /> : <MenuIcon/>
+                            }
+                        </button>
+                       
                         <div className='d-flex align-items-center'>
                         <i class="fa-solid fa-magnifying-glass srcIcon"></i>
                             <input type='text' placeholder='Search here...'/>
@@ -67,7 +76,11 @@ export default function Header() {
                 <div className='col-md-4 ms-auto'>
                     <div className='d-flex ms-auto align-items-center'>
                         <button className='ibtn' ><WbSunnyIcon/></button>
-                        <button className='ibtn notification' onClick={openNotify}><NotificationsNoneIcon/></button>
+                        <button className='ibtn notification' onClick={openNotify}>
+                             <Badge badgeContent={4} color="primary">
+                                <NotificationsNoneIcon/>
+                             </Badge>
+                          </button>
                             <Menu
                                 anchorEl={notify}
                                 id="notify-menu"

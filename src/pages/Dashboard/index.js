@@ -18,6 +18,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Rating from '@mui/material/Rating';
 
+import Pagination from '@mui/material/Pagination';
+
 
 const options = [
   'None',
@@ -57,6 +59,7 @@ export default function Home() {
   };
 
   return (
+    <div className='mycontent'>
     <div className='content_area'>
      
         <div className='row'>
@@ -705,12 +708,19 @@ export default function Home() {
                   </tbody>
               </table>
             </div>
+
+
+            <div className='d-flex align-items-center'>
+              <p className='mt-2'>Showing 12 of <strong>40</strong> items</p>
+              <Pagination count={10} showFirstButton showLastButton className='ms-auto'/>
+            </div>
           </div>
           </div>          
 
 
         </div>
      
+    </div>
     </div>
   )
 }

@@ -1,7 +1,9 @@
 .header_area{
     background-color: #fff;
     padding:0px 20px;
-    
+    width:100%;
+    position: fixed;
+    z-index: 99999;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -112,4 +114,16 @@
 .MuiPaper-root{
     padding:0px 5px !important;
 
+}
+
+.css-ihowzd-MuiBadge-badge{
+    top:10px !important;
+    right:30px !important;
+    background: blue !important;
+}
+
+.header_area button{
+    border:none;
+    outline: none;
+    background-color: transparent;
 }

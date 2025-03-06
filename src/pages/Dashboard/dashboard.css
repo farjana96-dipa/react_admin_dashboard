@@ -224,3 +224,8 @@
     color: red;
     
 }
+
+.css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+    background-color: blue !important;
+    color : #fff !important;
+}
