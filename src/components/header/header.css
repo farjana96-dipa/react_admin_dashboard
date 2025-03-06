@@ -1,6 +1,6 @@
 .header_area{
     background-color: #fff;
-    padding:0px 20px;
+    padding:10px 20px;
     width:100%;
     position: fixed;
     z-index: 99999;
@@ -122,8 +122,28 @@
     background: blue !important;
 }
 
-.header_area button{
-    border:none;
-    outline: none;
-    background-color: transparent;
+.btn-signup{
+    background-color: blue;
+    color: #fff;
+    padding: 10px 65px;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border:2px solid blue;
+    transition: all 0.5s ease;
 }
+
+.btn-signup:hover{
+    background-color: transparent;
+    color: #000;
+    border:2px solid blue;
+}
+.btn-signup i{
+    transition: all 0.3s ease;
+}
+.btn-signup:hover i{
+    transform: rotate(-45deg);
+    color: blue;
+}
+

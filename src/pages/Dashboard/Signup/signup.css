@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.signup_area{
+    width:100%;
+}
+
+.signup_area .content_area{
+    width:90%;
+    margin:250px 100px;
+    padding: 30px;
+}
+
+.signup_area .content_area h2{
+    font-size:50px;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: rgb(64, 62, 87);
+
+}
+
+.signup_area .content_area h2 .blue{
+    color:blue;
+}
+
+.signup_area .content_area p{
+    color : rgb(64, 62, 87);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin:20px 0px;
+    padding:0px 250px 0px 0px;
+}
+
+.signup_area .content_area button{
+    background-color: blue;
+    border:2px solid blue;
+    padding:8px 65px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    margin-top: 30px;
+    
+}
+
+.signup_area .content_area button:hover{
+    background-color: transparent;
+    color: #000;
+    border:2px solid blue;
+}
+
+.signup_area .signup_form{
+    width:100%;
+    height: 100vh;
+    background-color: #E4E4E4;
+    
+}
+
+.signup_area .signup_form .login_box{
+    background-color: transparent;
+    width: 100%;
+}

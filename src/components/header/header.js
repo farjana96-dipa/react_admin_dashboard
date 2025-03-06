@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './header.css'
 
-
+import {Link} from 'react-router'
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -26,7 +26,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import {MyContext} from '../../App.js';
 
 export default function Header() {
-
+   
     const [anchorEl, setAnchorEl] = useState(null);
    
     const handleClickMyAcc = (event) => {
@@ -60,7 +60,7 @@ export default function Header() {
                 </div>
                 <div className='col-md-6'>
                     <div className='d-flex align-items-center'>
-                        <button onClick={()=>context.setToggle(!context.toggle)}>
+                        <button className='ibtn' onClick={()=>context.setToggle(!context.toggle)}>
                             {
                                 context.toggle === false ?  <MenuOpenIcon /> : <MenuIcon/>
                             }
@@ -135,7 +135,10 @@ export default function Header() {
                         <button className='ibtn'><ShoppingCartOutlinedIcon/></button>
                         <button className='ibtn'><MailOutlinedIcon/></button>
 
-                        <button  className='ibtn d-flex userBox align-items-center' onClick={handleClickMyAcc}>
+                        {
+                            context.isLogin === false ? <Link to="/signup"><button className='btn btn-signup ms-auto'>Sign Up <i class="fa-solid fa-arrow-right ms-2"></i></button></Link> : 
+                            <div>
+                            <button  className='ibtn d-flex userBox align-items-center' onClick={handleClickMyAcc}>
                             <img src={UserImg} alt='User_image' className='user_img'/>
                             <div>
                                 <p className='name'>Farjana Dipa </p>
@@ -165,6 +168,10 @@ export default function Header() {
                                         <LogoutIcon className='me-2'/> Logout
                                         </MenuItem>
                                     </Menu>
+                                    </div>
+                        }
+
+                       
                        
                     </div>
                 </div>
