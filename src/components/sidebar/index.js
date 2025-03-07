@@ -97,8 +97,8 @@ export default function Sidebar() {
 
                 {ulist[3] && (
                     <ul className={`secUl ${activeTab === 3 ? 'show' : 'collapse'}`}>
-                    <li><a>Login</a></li>
-                    <li><a>Update Profile</a></li>
+                   <Link to="/login"> <li><a>Login</a></li></Link>
+                    <Link to="/signup"><li><a>Sign Up</a></li></Link>
                     <li><a>Logout</a></li>
 
                     </ul>

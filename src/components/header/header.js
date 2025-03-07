@@ -75,7 +75,9 @@ export default function Header() {
                 </div>
                 <div className='col-md-4 ms-auto'>
                     <div className='d-flex ms-auto align-items-center'>
-                        <button className='ibtn' ><WbSunnyIcon/></button>
+                        <button className='ibtn' onClick={()=>context.setthemeMod(!context.themeMod)} >
+                            <WbSunnyIcon/>
+                        </button>
                         <button className='ibtn notification' onClick={openNotify}>
                              <Badge badgeContent={4} color="primary">
                                 <NotificationsNoneIcon/>

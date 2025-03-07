@@ -1,12 +1,13 @@
 import React from 'react'
 import './login.css'
 import logo from '../../../assets/images/download.png'
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState} from 'react'
 import pattern from '../../../assets/images/pattern.df9a7a28fc13484d1013.webp'
 
 import { MyContext } from '../../../App'
 import Gimg from '../../../assets/images/download (1).png'
 import {Link} from 'react-router'
+import { useScatterChartProps } from '@mui/x-charts/internals'
 
 export default function Login() {
 
@@ -15,7 +16,12 @@ export default function Login() {
     useEffect(()=>{
         context.sethideSidebar(true);
     },[])
-  return (
+
+    const [inputIndex, setinputIndex] = useState(0);
+    const focusInput = (index) =>{
+        setinputIndex(index);
+    }
+    return (
     <>
     <img  src={pattern} className='login_pattern'/>
         <div className='login_section'>
@@ -28,14 +34,15 @@ export default function Login() {
             <div className='login_box'>
                 <div className='logArea'>
                 <form className='form'>
-                    <div className='form-group mb-3 d-flex align-items-center'>
+                    <div className={`form-group mb-3 d-flex align-items-center ${inputIndex===0 && 'focus'}`}>
+                        
                         <i class="fa-solid fa-envelope ficon"></i>
-                        <input type='text' placeholder='enter your email' className='form-control' />
+                        <input type='text' placeholder='enter your email' className='form-control' onFocus={()=>focusInput(0)} onBlur={()=>setinputIndex(null)} autoFocus/>
                     </div>
 
-                    <div className='form-group mb-3 d-flex align-items-center'>
+                    <div className={`form-group mb-3 d-flex align-items-center ${inputIndex===1 && 'focus'}`}>
                         <i class="fa-solid fa-lock ficon"></i>
-                        <input type='text' placeholder='enter your password' className='form-control' />
+                        <input type='text' placeholder='enter your password' className='form-control' onFocus={()=>focusInput(1)} onBlur={()=>setinputIndex(null)}/>
                         <i class="fa-solid fa-eye licon"></i>
                     </div>
 

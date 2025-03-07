@@ -17,6 +17,7 @@ function App() {
   const [isLogin, setisLogin] = useState(false);
   const [hideSidebar, sethideSidebar] = useState(false);
   const [signup, setSignup] = useState(false);
+  const [themeMod, setthemeMod] = useState(true);
 
   const values = {
     toggle, 
@@ -26,12 +27,25 @@ function App() {
     hideSidebar,
     sethideSidebar,
     signup,
-    setSignup
+    setSignup,
+    themeMod,
+    setthemeMod
 };
 
  useEffect(()=>{
-  
- },[toggle])
+  if(themeMod===true){
+    document.body.classList.remove('dark');
+    document.body.classList.add('light');
+    localStorage.setItem('themeMod','light');
+  }
+  else{
+    document.body.classList.remove('light');
+    document.body.classList.add('dark');
+    localStorage.setItem('themeMod','dark');
+  }
+
+
+ },[themeMod])
 
 
   return (

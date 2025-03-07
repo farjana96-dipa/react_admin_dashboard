@@ -17,9 +17,14 @@
   box-sizing: border-box;
 }
 
-body{
+body.light{
   font-family: "Lato", sans-serif;
   background-color: #faf5f5;
+}
+
+body.dark{
+  font-family: "Lato", sans-serif;
+  background-color: #071739;
 }
 a{
   text-decoration: none;
@@ -45,7 +50,7 @@ a{
   left:-100%;
 
 }
-.main .sidebarWrapper .sidebar{
+body.light .main .sidebarWrapper .sidebar{
   width:20%;
   background-color: #fff;
   padding: 80px 30px 80px 30px;
@@ -59,6 +64,21 @@ a{
 
 }
 
+body.dark .main .sidebarWrapper .sidebar{
+  width:20%;
+  background-color: #1B2B4D;
+  padding: 80px 30px 80px 30px;
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.4px 0 3.2px;
+  overflow-y: scroll;
+  transition: all 0.5s ease;
+
+}
+
+
 .main .sidebarWrapper .sidebar::-webkit-scrollbar{
   background-color: transparent;
 }
@@ -71,10 +91,16 @@ a{
   background: rgba(255,255,255,0.25) /* Color of the track */
 }
 
-.main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb {
+body.light .main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 255, 0.425); /* Color of the scrollbar */
   border-radius: 5px; /* Rounded corners */
 }
+
+body.dark .main .sidebarWrapper .sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(194, 194, 247, 0.425); /* Color of the scrollbar */
+  border-radius: 5px; /* Rounded corners */
+}
+
 
 .main .content{
   width:80%;

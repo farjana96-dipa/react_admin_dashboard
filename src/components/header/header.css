@@ -1,4 +1,4 @@
-.header_area{
+body.light .header_area{
     background-color: #fff;
     padding:10px 20px;
     width:100%;
@@ -6,18 +6,34 @@
     z-index: 99999;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+body.dark .header_area{
+    background-color: #071739;
+    padding:10px 20px;
+    width:100%;
+    position: fixed;
+    z-index: 99999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .header_area img{
     width:15%;
 }
 
-.header_area .logo_brand{
+body.light .header_area .logo_brand{
     font-size:25px;
     font-weight: 700;
     line-height: 35px;
-    cursor: pointer;
+    cursor: pointer; 
     margin-left:10px;
-    color: #7701c0;
+    color: #071739;
+}
+
+body.dark .header_area .logo_brand{
+    font-size:25px;
+    font-weight: 700;
+    line-height: 35px;
+    cursor: pointer; 
+    margin-left:10px;
+    color: #fff;
 }
 
 .header_area .srcIcon{
@@ -36,7 +52,7 @@
     outline:none;
 }
 
-.header_area .css-1umw9bq-MuiSvgIcon-root{
+body.light .header_area .css-1umw9bq-MuiSvgIcon-root{
     background: #F0F5FF !important;
     padding: 15px !important;
     border-radius: 50%;
@@ -45,7 +61,15 @@
     fill:  #000;
     margin-right: 20px !important;
 }
-
+body.dark .header_area .css-1umw9bq-MuiSvgIcon-root{
+    background: #fff !important;
+    padding: 15px !important;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    fill:  navy;
+    margin-right: 20px !important;
+}
 .header_area .name{
     font-size:18px;
     font-weight: 600;
@@ -116,13 +140,15 @@
 
 }
 
-.css-ihowzd-MuiBadge-badge{
+ .css-ihowzd-MuiBadge-badge{
     top:10px !important;
     right:30px !important;
     background: blue !important;
 }
 
-.btn-signup{
+
+
+body.light .btn-signup{
     background-color: blue;
     color: #fff;
     padding: 10px 65px;
@@ -133,17 +159,38 @@
     border:2px solid blue;
     transition: all 0.5s ease;
 }
-
-.btn-signup:hover{
+body.dark .btn-signup{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 65px;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border:2px solid #fff;
+    transition: all 0.5s ease;
+}
+body.light .btn-signup:hover{
     background-color: transparent;
     color: #000;
-    border:2px solid blue;
+    border:2px solid #fff;
 }
-.btn-signup i{
+body.dark .btn-signup:hover{
+    background-color: transparent;
+    color: #fff;
+    border:2px solid ;
+}
+body.light .btn-signup i{
     transition: all 0.3s ease;
 }
-.btn-signup:hover i{
+body.light .btn-signup:hover i{
     transform: rotate(-45deg);
     color: blue;
 }
+
+body.dark .btn-signup:hover i{
+    transform: rotate(-45deg);
+    color: #fff;
+}
+
 

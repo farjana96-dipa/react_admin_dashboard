@@ -1,4 +1,4 @@
-.sidebar .sidebtn{
+body.light .sidebar .sidebtn{
     background-color: transparent;
     border:none;
     outline: none;
@@ -13,16 +13,41 @@
     margin-bottom: 10px !important;
 }
 
+body.dark .sidebar .sidebtn{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    text-align: start !important;
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px !important;
+}
+
 .sidebar .keyicon{
     float: right !important;
     transition: all 0.5s ease;
     margin-top:7px;
 }
-.sidebar .sidebtn .firstIcon{
+body.light .sidebar .sidebtn .firstIcon{
     width:35px;
     height: 35px;
     background-color: transparent;
     color: rgb(94, 93, 114);
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+body.dark .sidebar .sidebtn .firstIcon{
+    width:35px;
+    height: 35px;
+    background-color: transparent;
+    color: #fff;
     padding: 8px;
     border-radius: 50%;
     transition: all 0.5s ease;
@@ -65,27 +90,67 @@
     padding: 10px 10px 10px 20px;
     margin-left:-10px;
 }
-.sidebar .secUl li a{
+body.light .sidebar .secUl li a{
     font-size:16px;
     font-weight: 400;
     cursor: pointer;
     color: #000 !important;
 }
 
-.sidebar .secUl li:hover a{
+
+body.dark .sidebar .secUl li a{
+    font-size:16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff !important;
+}
+body.light .sidebar .secUl li {
+    font-size:16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #000 !important;
+}
+
+
+body.dark .sidebar .secUl li {
+    font-size:16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff !important;
+}
+
+body.light .sidebar .secUl li:hover a{
     color: blue !important;
 }
 
-.sidebar .badge{
+body.dark .sidebar .secUl li:hover a{
+    color: #fff !important;
+}
+
+body.light .sidebar .badge{
     float:right !important;
     background-color: blue !important;
     margin-top: 7px;
 }
 
 
+body.dark .sidebar .badge{
+    float:right !important;
+    background-color: #fff !important;
+    margin-top: 7px;
+    color: blue;
+}
 
-.sidebar .logoutBtn{
+
+body.light .sidebar .logoutBtn{
     background-color: rgba(5, 24, 197, 0.493);
+    padding:30px;
+    border-radius: 15px;
+    margin:20px;   
+}
+
+body.dark .sidebar .logoutBtn{
+    background-color: rgba(255,255,255,0.7);
     padding:30px;
     border-radius: 15px;
     margin:20px;   
@@ -106,4 +171,35 @@
 
 .sidebar .sidebtn.active .keyicon{
     transform: rotate(90deg);
+}
+
+body.dark .css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root {
+  
+    color: rgb(255 252 252 / 87%);
+}
+
+body.dark .css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: #fff !important;
+    color: blue !important;
+}
+
+body.dark .css-btxnvc-MuiPaginationItem-root {
+ 
+    color: rgb(255 252 252 / 87%);
+  
+}
+
+
+body.dark .css-9xw0na-MuiRating-icon {
+    
+    color: rgb(255 255 255 / 26%);
+}
+body.dark .price{
+    color: orange;
+}
+
+
+body.dark .table{
+    border-color:0.5px solid rgb(255 252 252 / 87%);
+
 }

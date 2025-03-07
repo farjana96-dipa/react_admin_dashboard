@@ -149,15 +149,29 @@
     background: linear-gradient(118deg, #E1960F 0%, #F2CB28 100%);
     color: #fff;
 }
+body.light .card{
+    background-color: #fff;
+}
 
-.card h3{
+body.dark .card{
+    background-color: #1B2B4D;
+}
+body.light .card h3{
     font-size: 22px;
     font-weight: 600;
     line-height: 35px;
     
 }
 
-.card h4{
+body.dark .card h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #fff;
+    
+}
+
+body.light .card h4{
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -166,15 +180,59 @@
     margin-top:15px;
 }
 
-.card .selectBox{
+body.dark .card h4{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+    margin-top:15px;
+    color: #fff;
+}
+
+body.light .card .selectBox{
     width:100%;
     cursor: pointer;
 }
 
-.Table thead th{
+body.dark .card .selectBox{
+    width:100%;
+    cursor: pointer;
+    border:1px solid #fff !important;
+    border-radius: 5px;
+    
+}
+
+body.dark .card .selectBox em{
+    
+    color: #fff;
+}
+
+body.dark .card .selectBox svg{
+    fill:#fff !important;
+}
+
+body.light .Table thead th{
     background-color: black !important;
     color: #fff;
 }
+
+body.dark .Table thead th{
+    background-color: #1B2B4D !important;
+    color: #fff;
+}
+
+
+body.light .Table tbody td{
+    background-color:#fff  !important;
+    color: #000;
+}
+
+body.dark .Table tbody td{
+    background-color: #1B2B4D !important;
+    color: #fff;
+}
+
 
 .Table img{
     width:25%;
