@@ -1,13 +1,13 @@
 import React from 'react'
 import './signup.css'
-import '../Login/login.css'
-import Logimg from '../../../assets/images/pattern.df9a7a28fc13484d1013.webp'
-import logo from '../../../assets/images/download.png'
+import '../Login/index.js'
+import Logimg from '../../assets/images/pattern.df9a7a28fc13484d1013.webp'
+import logo from '../../assets/images/download.png'
 import { useContext, useEffect, useState } from 'react'
 
 
-import { MyContext } from '../../../App'
-import Gimg from '../../../assets/images/download (1).png'
+import { MyContext } from '../../App'
+import Gimg from '../../assets/images/download (1).png'
 import {Link} from 'react-router'
 
 export default function Signup() {

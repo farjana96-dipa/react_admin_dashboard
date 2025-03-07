@@ -6,15 +6,17 @@ import Header from './components/header/header.js';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Sidebar from  './components/sidebar/index.js'
 import { createContext, useState, useEffect } from 'react';
-import Login from './pages/Dashboard/Login/index.js'
-import Signup from './pages/Dashboard/Signup/index.js';
+import Login from './pages/Login/index.js'
+import Signup from './pages/Signup/index.js';
+import Products from './pages/products/index.js';
+import ProductDetails from './pages/productDetails/index.js';
 
 const MyContext = createContext();
 
 function App() {
 
   const [toggle, setToggle] = useState(false);
-  const [isLogin, setisLogin] = useState(false);
+  const [isLogin, setisLogin] = useState(true);
   const [hideSidebar, sethideSidebar] = useState(false);
   const [signup, setSignup] = useState(false);
   const [themeMod, setthemeMod] = useState(true);
@@ -74,6 +76,8 @@ function App() {
             <Route path="/dashboard"  element={<Dashboard/>}></Route>
             <Route path="/login"  element={<Login/>}></Route>
             <Route path="/signup" element={<Signup/>}></Route>
+            <Route path="/products" element={<Products/>}></Route>
+            <Route path="/productDetails" element={<ProductDetails/>}></Route>
           </Routes>
         </div>
       </div>

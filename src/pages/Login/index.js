@@ -1,11 +1,11 @@
 import React from 'react'
 import './login.css'
-import logo from '../../../assets/images/download.png'
+import logo from '../../assets/images/download.png'
 import { useContext, useEffect, useState} from 'react'
-import pattern from '../../../assets/images/pattern.df9a7a28fc13484d1013.webp'
+import pattern from '../../assets/images/pattern.df9a7a28fc13484d1013.webp'
 
-import { MyContext } from '../../../App'
-import Gimg from '../../../assets/images/download (1).png'
+import { MyContext } from '../../App'
+import Gimg from '../../assets/images/download (1).png'
 import {Link} from 'react-router'
 import { useScatterChartProps } from '@mui/x-charts/internals'
 

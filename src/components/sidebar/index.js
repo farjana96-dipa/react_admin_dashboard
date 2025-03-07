@@ -76,9 +76,9 @@ export default function Sidebar() {
 
                 {ulist[2] && (
                     <ul className={`secUl ${activeTab === 2 ? 'show' : 'collapse'}`}>
-                    <li><a>Vegetables</a></li>
-                    <li><a>Fashion & Cosmetics</a></li>
-                    <li><a>Electronics Gadgets</a></li>
+                    <Link to="/product"><li><a>Product List</a></li></Link>
+                    <Link to="/"><li><a>Product View</a></li></Link>
+                    <Link to="/"><li><a>Product Upload</a></li></Link>
 
                     </ul>
                 )}

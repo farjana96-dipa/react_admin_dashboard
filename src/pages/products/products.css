@@ -1,0 +1,24 @@
+.box2 .boxIcon1{
+    float: right !important;
+    font-size: 45px;
+    color: #eeeeee;
+}
+body.light .firstCard button{
+    background-color: #F5F5F5;
+    color: rgb(94, 93, 114);
+    padding:4px 8px;
+    border-radius: 12px;
+    border:none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+body.dark .firstCard button{
+    background-color: #112143;
+    color: #fff;
+    padding:4px 8px;
+    border-radius: 12px;
+    border:none;
+    font-size: 12px;
+    font-weight: 400;
+}

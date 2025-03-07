@@ -53,7 +53,7 @@ a{
 body.light .main .sidebarWrapper .sidebar{
   width:20%;
   background-color: #fff;
-  padding: 80px 30px 80px 30px;
+  padding: 120px 30px 80px 30px;
   position: fixed;
   left:0;
   top:0;
@@ -67,7 +67,7 @@ body.light .main .sidebarWrapper .sidebar{
 body.dark .main .sidebarWrapper .sidebar{
   width:20%;
   background-color: #1B2B4D;
-  padding: 80px 30px 80px 30px;
+  padding: 120px 30px 80px 30px !important;
   position: fixed;
   left:0;
   top:0;

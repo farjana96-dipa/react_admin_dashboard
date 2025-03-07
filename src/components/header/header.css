@@ -70,24 +70,42 @@ body.dark .header_area .css-1umw9bq-MuiSvgIcon-root{
     fill:  navy;
     margin-right: 20px !important;
 }
-.header_area .name{
+body.light .header_area .name{
     font-size:18px;
     font-weight: 600;
     line-height: 30px;
     margin-left: 15px;
     margin-top:15px;
 }
+
+body.dark .header_area .name{
+    font-size:18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-top:15px;
+    color: #fff;
+}
 .header_area .userBox{
     background-color: transparent !important;
     border:none;
     outline: none;
 }
-.header_area .userBox img{
+body.light .header_area .userBox img{
     width:50px;
     height: 50px;
+    border:2px solid blue;
+    padding: 3px;
+    border-radius: 100%;
 }
-
-.header_area .userBox .user{
+body.dark .header_area .userBox img{
+    width:50px;
+    height: 50px;
+    border:2px solid #ebeaea;
+    padding: 3px;
+    border-radius: 100%;
+}
+body.light .header_area .userBox .user{
     font-size:14px;
     font-weight: 400;
     line-height: 24px;
@@ -96,11 +114,20 @@ body.dark .header_area .css-1umw9bq-MuiSvgIcon-root{
     margin-left: -15px;
 }
 
+body.dark .header_area .userBox .user{
+    font-size:14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(226, 226, 226);
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
 .header_area .ibtn{
     border:none !important;
     background-color: transparent !important;
     outline: none !important;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
  .css-1rju2q6-MuiButtonBase-root-MuiMenuItem-root{
