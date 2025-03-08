@@ -4,3 +4,8 @@ Theme Mood - Navy blue & White
 
 
 ![Example Image](src/assets/images/screencapture-localhost-3000-2025-03-08-20_52_47.png)
+
+![Example Image](src/assets/images/screencapture-localhost-3000-signup-2025-03-08-20_53_51.png)
+
+
+![Example Image](src/assets/images/screencapture-localhost-3000-productDetails-2025-03-08-20_53_38.png)
