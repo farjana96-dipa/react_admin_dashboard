@@ -1,0 +1,129 @@
+body.light .media img{
+    width:20%;
+    border-radius: 12px;
+    border: 2px dashed #c0bfbf;
+    margin:10px;
+    position: relative;
+}
+
+body.dark .media img{
+    width:20%;
+    border-radius: 12px;
+    border: 2px dashed #ffffff;
+    margin:10px;
+    position: relative;
+}
+
+body.light .media .closeIcon{
+    position: absolute;
+    left:20%;
+    background-color: #b70e34;
+    padding:8px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+    cursor: pointer;
+}
+
+body.light .media h4{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+body.dark .media h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+body.light .reply-form .form-group label{
+    color: rgb(64, 62, 87);
+    font-size:14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+body.dark .reply-form .form-group label{
+    color: rgb(236, 236, 238);
+    font-size:14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+body.light .reply-form .form-group h4{
+    color: rgb(64, 62, 87);
+    font-size:14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body.light .reply-form .form-group h4{
+    color: rgb(239, 239, 240);
+    font-size:14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body.light .reply-form input{
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+body.light .reply-form textarea{
+    background-color: #FAFAFA;
+   
+    border-radius: 8px;
+}
+
+body.dark .reply-form input{
+    background-color: #071739;
+    padding: 20px;
+    border-radius: 8px;
+    border:none;
+}
+
+body.dark .reply-form textarea{
+    background-color: #071739;
+    border:none;
+    border-radius: 8px;
+}
+
+body.light .css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    margin-top:-10px !important;
+    padding: 7px !important;
+    background-color: #FAFAFA !important;
+}
+
+body.dark .css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+    margin-top:-10px !important;
+    padding: 7px !important;
+    background-color: #071739 !important;
+    border:none;
+}
+
+body.dark .pbtn{
+    background-color: orange;
+    color: #000;
+    border:none;
+    padding: 15px;
+    margin-top:20px;
+}
+
+body.light .pbtn{
+    background-color: blue !important;
+    color: #fff;
+    border:none;
+    padding: 15px;
+    margin-top:20px;
+}
+
+.productUpload body.dark .card .selectBox{
+    border:none !important;
+}

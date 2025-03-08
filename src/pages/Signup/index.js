@@ -36,7 +36,7 @@ export default function Signup() {
                         <p className='text'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                         </p>
-                        <Link to={"/"}><button href="/dashboard"><i class="fa-solid fa-house me-2 cursor-pointer"></i> Go to Home</button></Link>
+                        <Link to="/dashboard"><button className='btn btn-primary'><i class="fa-solid fa-house me-2 cursor-pointer"></i> Go to Home</button></Link>
                     </div>
                 </div>
                 <div className='col-md-4'>

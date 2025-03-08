@@ -364,7 +364,7 @@ export default function ProductDetails() {
             <div className='reply-form mt-5'>
                 <h3>Review Reply Form</h3>
                 <form className='reviewForm py-3 w-50'>
-                                <h4>Write a Review</h4>
+                                <h4 className='mb-3'>Write a Review</h4>
 
                                 <div className='row'>
                                     <div className='col-md-6'>

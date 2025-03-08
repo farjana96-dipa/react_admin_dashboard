@@ -10,6 +10,7 @@ import Login from './pages/Login/index.js'
 import Signup from './pages/Signup/index.js';
 import Products from './pages/products/index.js';
 import ProductDetails from './pages/productDetails/index.js';
+import ProductUpload from './pages/productUpload/index.js';
 
 const MyContext = createContext();
 
@@ -78,6 +79,7 @@ function App() {
             <Route path="/signup" element={<Signup/>}></Route>
             <Route path="/products" element={<Products/>}></Route>
             <Route path="/productDetails" element={<ProductDetails/>}></Route>
+            <Route path="/productUpload" element={<ProductUpload/>}></Route>
           </Routes>
         </div>
       </div>
